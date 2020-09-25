@@ -9,6 +9,18 @@ require './stats_calculator'
 
 describe "given an array with an element of 1" do
     it "will return an 1 as an integer" do
-    expect(stats_calculator([1])).to eq(1)
+        expect(stats_calculator([1])).to eq(1)
+    end
+end
+
+describe "given an array with an element of 2" do
+    it "will return a 2 as an integer" do
+        expect(stats_calculator([2])).to eq(2)
+    end
+end
+
+describe "given an array with an element of 3" do
+    it "will return a 3 as an integer" do
+        expect(stats_calculator([3])).to eq(3)
     end
 end
