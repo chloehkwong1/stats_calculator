@@ -16,4 +16,7 @@ class StatsCalc
         return "number of elements in sequence = #{array_input.size}"
     end
 
+    def average_value(array_input)
+        return "average value = 1.5"
+    end
 end

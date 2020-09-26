@@ -92,8 +92,14 @@ describe StatsCalc do
                 expect(stats_calc.number_of_elements([1, 2, 3])).to eq("number of elements in sequence = 3")
             end
         end
+    end
 
-
+    context "testing function to return average value of array" do
+        describe "given an array with two elements [1, 2]" do
+            it "will return 1.5 in a string" do
+                expect(stats_calc.average_value([1, 2])).to eq("average value = 1.5")
+            end
+        end
     end
 end
 
