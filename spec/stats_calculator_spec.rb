@@ -40,11 +40,11 @@ context "for an array of size 2" do
         end
     end
 
-    # describe "given an array with two elements [1, 2]" do
-    #     it "will return the maximum value of 2" do
-    #         expect(stats_calculator([1, 2])).to eq(2)
-    #     end
-    # end
+    describe "given an array with two elements [1, 2]" do
+        it "will return the minimum of 1 in a string" do
+            expect(minimum_value([1, 2])).to eq("minimum value = 1")
+        end
+    end
 end
 
 
