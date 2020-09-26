@@ -25,11 +25,26 @@ context "tests for an input of array size 1" do
             expect(stats_calculator([3])).to eq(3)
         end
     end
+end
 
-    describe "given an array [2, 3]" do
-        it "returns minimum value" do
-            expect(stats_calculator([3, 2])).to eq(2)
+context "for an array of size 2" do
+    describe "given an array with two elements [1, 2]" do
+        it "will return the minimum value of 1" do
+            expect(stats_calculator([1, 2])).to eq(1)
         end
     end
+
+    describe "given an array with two elements [2, 1]" do
+        it "will return the minimum value of 1" do
+            expect(stats_calculator([2, 1])).to eq(1)
+        end
+    end
+
+    # describe "given an array with two elements [1, 2]" do
+    #     it "will return the maximum value of 2" do
+    #         expect(stats_calculator([1, 2])).to eq(2)
+    #     end
+    # end
 end
+
 
