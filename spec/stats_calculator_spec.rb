@@ -67,6 +67,12 @@ describe StatsCalc do
             end
         end
 
+        describe "given an array with two elements [3, 2]" do
+            it "will return a maximum of 3 in a string" do
+                expect(stats_calc.maximum_value([3, 2])).to eq("maximum value = 3")
+            end
+        end
+
     end
 end
 

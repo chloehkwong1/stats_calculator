@@ -9,7 +9,7 @@ class StatsCalc
     end
 
     def maximum_value(array_input)
-        "maximum value = 2"
+        "maximum value = #{array_input.max}"
     end
 
 end
