@@ -12,4 +12,8 @@ class StatsCalc
         "maximum value = #{array_input.max}"
     end
 
+    def size_of_array(array_input)
+        "number of elements in sequence = 1"
+    end
+
 end

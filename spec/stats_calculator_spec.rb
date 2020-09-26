@@ -72,7 +72,14 @@ describe StatsCalc do
                 expect(stats_calc.maximum_value([3, 2])).to eq("maximum value = 3")
             end
         end
+    end
 
+    context "testing function to return number of elements" do
+        describe "given an array of size 1" do
+            it "will return a size of 1 in a string" do
+                expect(stats_calc.size_of_array([1])).to eq("number of elements in sequence = 1")
+            end
+        end
     end
 end
 
