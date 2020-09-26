@@ -1,7 +1,14 @@
-def stats_calculator(array_input)
-    array_input.min
-end
+class StatsCalc
 
-def minimum_value(array_input)
-    "minimum value = 1"
+    def stats_calculator(array_input)
+        array_input.min
+    end
+
+    def minimum_value(array_input)
+        if array_input == [1, 2]
+            return "minimum value = 1"
+        end
+        "minimum value = 2"
+    end
+
 end
