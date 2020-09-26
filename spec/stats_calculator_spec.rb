@@ -77,9 +77,23 @@ describe StatsCalc do
     context "testing function to return number of elements" do
         describe "given an array of size 1" do
             it "will return a size of 1 in a string" do
-                expect(stats_calc.size_of_array([1])).to eq("number of elements in sequence = 1")
+                expect(stats_calc.number_of_elements([1])).to eq("number of elements in sequence = 1")
             end
         end
+
+        describe "given an array of size 2" do
+            it "will return a size of 2 in a string" do
+                expect(stats_calc.number_of_elements([1, 2])).to eq("number of elements in sequence = 2")
+            end
+        end
+
+        describe "given an array of size 3" do
+            it "will return a size of 3 in a string" do
+                expect(stats_calc.number_of_elements([1, 2, 3])).to eq("number of elements in sequence = 3")
+            end
+        end
+
+
     end
 end
 
