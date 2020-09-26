@@ -55,6 +55,11 @@ describe StatsCalc do
             end
         end
 
+        describe "given an array with two elements [13, 17]" do
+            it "will return the minimum of 2 in a string" do
+                expect(stats_calc.minimum_value([13, 17])).to eq("minimum value = 13")
+            end
+        end
 
     end
 end

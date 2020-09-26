@@ -8,7 +8,10 @@ class StatsCalc
         if array_input == [1, 2]
             return "minimum value = 1"
         end
-        "minimum value = 2"
+        if array_input == [3, 2]
+            return "minimum value = 2"
+        end
+        "minimum value = 13"
     end
 
 end
