@@ -17,6 +17,6 @@ class StatsCalc
     end
 
     def average_value(array_input)
-        return "average value = #{array_input.sum/array_input.size.to_f}"
+        return "average value = #{(array_input.sum/array_input.size.to_f).round(1)}"
     end
 end

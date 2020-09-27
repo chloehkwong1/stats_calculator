@@ -113,6 +113,12 @@ describe StatsCalc do
             end
         end
 
+        describe "given an array with three elements [1, 3, 3]" do
+            it "will return 2.3 in a string" do
+                expect(stats_calc.average_value([1, 3, 3])).to eq("average value = 2.3")
+            end
+        end
+
     end
 end
 
