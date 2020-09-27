@@ -17,6 +17,6 @@ class StatsCalc
     end
 
     def average_value(array_input)
-        return "average value = #{(array_input[0] + array_input[1])/2}"
+        return "average value = #{((array_input[0].to_f + array_input[1])/2)}"
     end
 end

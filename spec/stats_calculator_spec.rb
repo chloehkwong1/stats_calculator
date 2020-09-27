@@ -103,7 +103,7 @@ describe StatsCalc do
 
         describe "given an array with two elements [1, 3]" do
             it "will return 1.5 in a string" do
-                expect(stats_calc.average_value([1, 3])).to eq("average value = 2")
+                expect(stats_calc.average_value([1, 3])).to eq("average value = 2.0")
             end
         end
 
