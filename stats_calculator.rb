@@ -1,7 +1,7 @@
 class StatsCalc
 
     def stats_calculator(array_input)
-        
+        return "#{minimum_value(array_input)}\n#{maximum_value(array_input)}\n#{number_of_elements(array_input)}\n#{average_value(array_input)}"
     end
 
     def minimum_value(array_input)

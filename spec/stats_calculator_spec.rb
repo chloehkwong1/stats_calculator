@@ -86,8 +86,16 @@ describe StatsCalc do
                 expect(stats_calc.average_value([1, 3, 3])).to eq("average value = 2.3")
             end
         end
-
     end
+
+    context "full stats calculator for an array" do
+        describe "given an array [1, 2]" do
+            it "will return the min/max value, the number of elements, and the average value" do
+                expect(stats_calc.stats_calculator([1, 2])).to eq("minimum value = 1\nmaximum value = 2\nnumber of elements in sequence = 2\naverage value = 1.5")
+            end
+        end
+    end
+
 end
 
 
